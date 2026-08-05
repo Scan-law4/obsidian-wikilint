@@ -31,6 +31,8 @@ from pathlib import Path
 
 from obsidian_wikilint.vault_compat import VaultCompat
 
+__version__ = "0.1.0"
+
 
 def is_excluded(path: Path, excludes: set[str]) -> bool:
     """Component-based exclude. Applies to which notes are SCANNED;
@@ -82,6 +84,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         prog="wikilint",
         description="Check an Obsidian-compatible vault for broken [[wikilinks]].",
+    )
+    parser.add_argument(
+        "--version", action="version", version=f"%(prog)s {__version__}",
     )
     parser.add_argument("vault", type=Path, help="Path to the vault root")
     parser.add_argument(
