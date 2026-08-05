@@ -35,10 +35,12 @@ repos:
     rev: v0.1.0
     hooks:
       - id: obsidian-wikilint
+        args: ["path/to/vault"]
 ```
 
-Note: `pass_filenames: false` means the hook lints the full vault on any
-`.md` change. For large vaults, consider a dedicated CI job instead.
+Note: you must provide the vault path via `args`. `pass_filenames: false`
+means the hook lints the full vault on any `.md` change. For large vaults,
+consider a dedicated CI job instead.
 
 ## Known upstream quirks handled
 
