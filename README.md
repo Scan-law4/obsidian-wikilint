@@ -1,5 +1,7 @@
 # obsidian-wikilint
 
+![Tests](https://github.com/Scan-law4/obsidian-wikilint/actions/workflows/test.yml/badge.svg)
+
 Check an Obsidian-compatible markdown vault for broken `[[wikilinks]]`.
 Exit 1 on failure — ready for pre-commit hooks and CI.
 
