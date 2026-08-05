@@ -3,6 +3,13 @@
 set -u
 PY=/home/sc4n/hermes-agent/venv/bin/python3
 WL=/home/sc4n/hermes-agent/venv/bin/wikilint
+# Portability: this battery runs on this machine AND in GitHub Actions CI.
+# Local venv paths exist here; on a runner they don't — fall back to PATH.
+# Override explicitly (PY=/usr/bin/python3 WL=... bash tests/control_battery.sh)
+# to pin a specific interpreter/binary.
+[ -x "$PY" ] || PY=$(command -v python3 || echo python3)
+[ -x "$WL" ] || WL=$(command -v wikilint || echo wikilint)
+echo "battery: PY=$PY WL=$WL"
 T=$(mktemp -d /tmp/wikilint_battery_XXXX)
 pass=0; fail=0
 check() { # name expected_exit actual_exit
