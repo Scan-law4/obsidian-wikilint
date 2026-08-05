@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Check an Obsidian-compatible vault for broken [[wikilinks]] (exact resolution, pre-commit ready)"
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     # Upper-bounded while vault_compat overrides a private method
     # (_get_all_file_paths). Re-evaluate when the upstream fix lands.

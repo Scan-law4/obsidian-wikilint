@@ -14,7 +14,7 @@ is flagged instead of silently resolving to `pepper.md`.
 pip install git+https://github.com/Scan-law4/obsidian-wikilint.git
 ```
 
-Requirements: Python ≥3.9, `obsidianmd-parser` ≥0.4.1,<0.5.
+Requirements: Python ≥3.12 (upstream `obsidianmd-parser` constraint), `obsidianmd-parser` ≥0.4.1,<0.5.
 
 ## Usage
 

@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.12", "3.13"]
 
     steps:
       - uses: actions/checkout@v4
@@ -23,6 +23,7 @@ jobs:
 
       - name: Install package
         run: pip install -e .
+        # obsidianmd-parser requires Python >=3.12 — keep matrix in sync
 
       - name: Verify entry point
         run: |
