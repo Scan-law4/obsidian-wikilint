@@ -1,0 +1,532 @@
+{
+    "SCHEMA.md": [
+        {
+            "target": "wikilinks",
+            "reason": "not found"
+        }
+    ],
+    "inbox/session-retrospective-skill-creation-2026-06-28.md": [
+        {
+            "target": "plans/session-retrospective-skill-2026-06-28",
+            "reason": "not found"
+        },
+        {
+            "target": "concepts/lessons-log",
+            "reason": "not found"
+        }
+    ],
+    "system/lima-repo.md": [
+        {
+            "target": "plans/2026-08-04-remove-nested-hermes-repo",
+            "reason": "not found"
+        }
+    ],
+    "retrospectives/Wiki-Structure-Audit-Plan-and-Execution-20260629_021517_bd65fe-retrospective.md": [
+        {
+            "target": "wikilinks",
+            "reason": "not found"
+        }
+    ],
+    "retrospectives/V4-Pro-Alternative-Live-Portal-Evaluation-MiniMax-M3-20260724_181244_eb0e6d-retrospective.md": [
+        {
+            "target": "-z \"$q\"",
+            "reason": "not found"
+        }
+    ],
+    "mom-skills/index.md": [
+        {
+            "target": "system/operations/skill-changelog",
+            "reason": "not found"
+        }
+    ],
+    "patterns/dealer-phase1-capability-report.md": [
+        {
+            "target": "system/model-qwen35-27b",
+            "reason": "not found"
+        }
+    ],
+    "patterns/dealer-coaching-case-study.md": [
+        {
+            "target": "system/model-qwen35-27b",
+            "reason": "not found"
+        }
+    ],
+    "patterns/mom-build-status-2026-04-29.md": [
+        {
+            "target": "system/agent-studio",
+            "reason": "not found"
+        }
+    ],
+    "patterns/pre-response-checklist.md": [
+        {
+            "target": "SOUL.md",
+            "reason": "not found"
+        }
+    ],
+    "patterns/structured-agent-memory-framework.md": [
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cross-agent-query-protocol",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        }
+    ],
+    "patterns/auxiliary-model-local-offload.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "system/deepseek-provider",
+            "reason": "not found"
+        }
+    ],
+    "patterns/dealer-phase0-capability-report.md": [
+        {
+            "target": "system/model-qwen35-27b",
+            "reason": "not found"
+        }
+    ],
+    "patterns/session-postmortem-2026-05-06.md": [
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cross-agent-query-protocol",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        }
+    ],
+    "patterns/lima-fleet-audit.md": [
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cross-agent-query-protocol",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        }
+    ],
+    "patterns/plan-lifecycle-workflow.md": [
+        {
+            "target": "software-development/plan",
+            "reason": "not found"
+        }
+    ],
+    "patterns/anti-hallucination-layer.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "concepts/language-detection-architecture",
+            "reason": "not found"
+        }
+    ],
+    "patterns/contradiction-ledger.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "concepts/language-detection-architecture",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        }
+    ],
+    "patterns/dealer-model-test-results.md": [
+        {
+            "target": "system/model-qwen35-27b",
+            "reason": "not found"
+        }
+    ],
+    "patterns/lima-core-responsibilities.md": [
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        }
+    ],
+    "patterns/session-handoff.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        }
+    ],
+    "patterns/interrogation-failure.md": [
+        {
+            "target": "concepts/session-handoff-architecture",
+            "reason": "not found"
+        }
+    ],
+    "patterns/smbus-inaccessible-b550.md": [
+        {
+            "target": "system/b550-aorus-elite-ax-v2",
+            "reason": "not found"
+        },
+        {
+            "target": "system/corsair-vengeance-rgb-pro-128gb",
+            "reason": "not found"
+        }
+    ],
+    "reference/gigabyte-aorus-rtx3090-xtreme.md": [
+        {
+            "target": "system/agent-house",
+            "reason": "not found"
+        },
+        {
+            "target": "system/cougar-mx600-rgb-case",
+            "reason": "not found"
+        }
+    ],
+    "reference/hermes-self-improvement-review.md": [
+        {
+            "target": "review-pending",
+            "reason": "not found"
+        },
+        {
+            "target": "system/operations/skill-changelog",
+            "reason": "not found"
+        }
+    ],
+    "reference/lima-knowledge-vault.md": [
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        },
+        {
+            "target": "system/hermes-version-and-updates",
+            "reason": "not found"
+        }
+    ],
+    "reference/model-qwen35-27b.md": [
+        {
+            "target": "system/agent-dealer",
+            "reason": "not found"
+        }
+    ],
+    "reference/deepseek-provider.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cloud-dispatch-architecture",
+            "reason": "not found"
+        },
+        {
+            "target": "system/hermes-version-and-updates",
+            "reason": "not found"
+        }
+    ],
+    "reference/hermes-version-and-updates.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-house",
+            "reason": "not found"
+        },
+        {
+            "target": "system/fleet-cron-jobs",
+            "reason": "not found"
+        }
+    ],
+    "reference/candidate-models-june-2026.md": [
+        {
+            "target": "system/lima-system-architecture",
+            "reason": "not found"
+        },
+        {
+            "target": "system/lima-feature-map",
+            "reason": "not found"
+        }
+    ],
+    "reference/lima-system-architecture.md": [
+        {
+            "target": "system/fleet-communication-matrix",
+            "reason": "not found"
+        }
+    ],
+    "reference/hermes-toolsets.md": [
+        {
+            "target": "system/fleet-telegram-architecture",
+            "reason": "not found"
+        }
+    ],
+    "reference/doco-system.md": [
+        {
+            "target": "decisions/doco-agent-build-plan-2026-06-12",
+            "reason": "not found"
+        },
+        {
+            "target": "system/fleet-communication-matrix",
+            "reason": "not found"
+        },
+        {
+            "target": "concepts/agent-building-procedure",
+            "reason": "not found"
+        }
+    ],
+    "reference/cougar-mx600-rgb-case.md": [
+        {
+            "target": "system/agent-house",
+            "reason": "not found"
+        }
+    ],
+    "reference/review-pending-skill.md": [
+        {
+            "target": "system/operations/skill-changelog",
+            "reason": "not found"
+        }
+    ],
+    "reference/corsair-vengeance-rgb-pro-128gb.md": [
+        {
+            "target": "system/agent-house",
+            "reason": "not found"
+        },
+        {
+            "target": "system/gigabyte-aorus-rtx3090-xtreme",
+            "reason": "not found"
+        }
+    ],
+    "reference/hermes-gateway-reference.md": [
+        {
+            "target": "protocols/cross-agent-query-protocol",
+            "reason": "not found"
+        },
+        {
+            "target": "system/profile-change-reload",
+            "reason": "not found"
+        }
+    ],
+    "reference/b550-aorus-elite-ax-v2.md": [
+        {
+            "target": "system/corsair-vengeance-rgb-pro-128gb",
+            "reason": "not found"
+        },
+        {
+            "target": "system/gigabyte-aorus-rtx3090-xtreme",
+            "reason": "not found"
+        },
+        {
+            "target": "system/cougar-mx600-rgb-case",
+            "reason": "not found"
+        }
+    ],
+    "agents/mom.md": [
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cloud-dispatch-architecture",
+            "reason": "not found"
+        },
+        {
+            "target": "system/hermes-version-and-updates",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/cross-agent-query-protocol",
+            "reason": "not found"
+        },
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        }
+    ],
+    "hermes-agent/github-pr-review-agent.md": [
+        {
+            "target": "hermes-agent/context-references",
+            "reason": "not found"
+        }
+    ],
+    "decisions/layer-2-git-skill-doubt-review-2026-08-04.md": [
+        {
+            "target": "plans/lima-repo-architecture-2026-08-02",
+            "reason": "not found"
+        }
+    ],
+    "decisions/disable-self-improvement-review.md": [
+        {
+            "target": "system/hermes-version-and-updates",
+            "reason": "not found"
+        }
+    ],
+    "procedures/fleet-cron-jobs.md": [
+        {
+            "target": "system/hermes-version-and-updates",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        }
+    ],
+    "procedures/privacy-safe-wiki-audit.md": [
+        {
+            "target": "system/lima-knowledge-vault",
+            "reason": "not found"
+        }
+    ],
+    "procedures/agent-checkpoint-procedures.md": [
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-studio",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-media",
+            "reason": "not found"
+        }
+    ],
+    "procedures/git-init-in-profiles.md": [
+        {
+            "target": "plans/lima-repo-architecture-2026-08-02",
+            "reason": "not found"
+        },
+        {
+            "target": "decisions/lima-repo-git-vs-export",
+            "reason": "not found"
+        },
+        {
+            "target": "hermes-agent/profile-distributions",
+            "reason": "not found"
+        }
+    ],
+    "procedures/data-classification.md": [
+        {
+            "target": "system/agent-lima",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-studio",
+            "reason": "not found"
+        },
+        {
+            "target": "system/lima-knowledge-vault",
+            "reason": "not found"
+        },
+        {
+            "target": "system/lima-storage-behavior",
+            "reason": "not found"
+        }
+    ],
+    "procedures/gateway-hook-patches.md": [
+        {
+            "target": "concepts/language-detection-architecture",
+            "reason": "not found"
+        }
+    ],
+    "procedures/session-handoff-mom.md": [
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        }
+    ],
+    "procedures/bios-verification-checklist.md": [
+        {
+            "target": "system/b550-aorus-elite-ax-v2",
+            "reason": "not found"
+        },
+        {
+            "target": "system/corsair-vengeance-rgb-pro-128gb",
+            "reason": "not found"
+        },
+        {
+            "target": "system/gigabyte-aorus-rtx3090-xtreme",
+            "reason": "not found"
+        }
+    ],
+    "procedures/cross-agent-query-protocol.md": [
+        {
+            "target": "protocols/data-classification",
+            "reason": "not found"
+        }
+    ],
+    "procedures/cloud-dispatch-architecture.md": [
+        {
+            "target": "system/agent-pepper",
+            "reason": "not found"
+        },
+        {
+            "target": "system/agent-mom",
+            "reason": "not found"
+        }
+    ],
+    "hermes-agent/chats/2026-07-16-c_1784222515145.md": [
+        {
+            "target": "Documents/plans/2026-07-04-portal-discovery.md\\                    \n     Status: Portal Discovery",
+            "reason": "not found"
+        },
+        {
+            "target": "Documents/plans/2026-07-04-portal-expansion.md\\                    \n     Status: Portal Expansion",
+            "reason": "not found"
+        },
+        {
+            "target": "Documents/plans/2026-07-04-portal-migration.md\\                    \n     Status: Portal Migration",
+            "reason": "not found"
+        },
+        {
+            "target": "Documents/plans/2026-07-04-portal-migration\\",
+            "reason": "not found"
+        }
+    ]
+}

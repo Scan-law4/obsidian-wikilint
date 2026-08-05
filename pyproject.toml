@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "obsidian-wikilint"
+version = "0.1.0"
+description = "Check an Obsidian-compatible vault for broken [[wikilinks]] (exact resolution, pre-commit ready)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    # Upper-bounded while vault_compat overrides a private method
+    # (_get_all_file_paths). Re-evaluate when the upstream fix lands.
+    "obsidianmd-parser>=0.4.1,<0.5",
+]
+
+[project.scripts]
+wikilint = "obsidian_wikilint.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/obsidian_wikilint"]

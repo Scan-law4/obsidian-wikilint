@@ -1,0 +1,54 @@
+# obsidian-wikilint
+
+Check an Obsidian-compatible markdown vault for broken `[[wikilinks]]`.
+Exit 1 on failure — ready for pre-commit hooks and CI.
+
+Strict resolution only: no fuzzy matching, so a typo like `[[peper]]`
+is flagged instead of silently resolving to `pepper.md`.
+
+## Install
+
+```bash
+pip install git+https://github.com/Scan-law4/obsidian-wikilint.git
+```
+
+Requirements: Python ≥3.9, `obsidianmd-parser` ≥0.4.1,<0.5.
+
+## Usage
+
+```bash
+wikilint /path/to/vault                    # check all notes
+wikilint /path/to/vault --exclude _archive # skip directories
+wikilint /path/to/vault --json             # machine-readable output
+wikilint /path/to/vault --ignore-target pattern  # ignore intentional links
+```
+
+Exit codes: `0` clean, `1` broken links found, `2` environment error
+(vault missing or indexed 0 notes — the linter fails loud, never
+passes silently).
+
+## Pre-commit hook
+
+```yaml
+repos:
+  - repo: https://github.com/Scan-law4/obsidian-wikilint
+    rev: v0.1.0
+    hooks:
+      - id: obsidian-wikilint
+```
+
+Note: `pass_filenames: false` means the hook lints the full vault on any
+`.md` change. For large vaults, consider a dedicated CI job instead.
+
+## Known upstream quirks handled
+
+obsidian-wikilint wraps [`obsidianmd-parser`](https://codeberg.org/paddyd/obsidianmd-parser)
+with workarounds for three known issues:
+
+| Issue | Our fix |
+|-------|---------|
+| Vault silently indexes 0 notes under dot-prefixed paths | `vault_compat.py` — patches private method to respect all directories |
+| `find_broken_links()` uses fuzzy matching (wrong for integrity checks) | `resolve_strict()` — exact `get_note()` resolution, no tolerance |
+| Library writes `print()` calls to stdout, corrupting JSON output | `cli.py` — `redirect_stdout` to stderr, transparent mode bypass |
+
+These are workarounds, not upstream fixes. Upstream issues pending.

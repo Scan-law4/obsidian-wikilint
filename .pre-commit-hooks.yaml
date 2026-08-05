@@ -1,0 +1,8 @@
+- id: obsidian-wikilint
+  name: obsidian-wikilint
+  description: "Check Obsidian vault for broken [[wikilinks]] (exact resolution)."
+  entry: wikilint
+  language: python
+  pass_filenames: false
+  additional_dependencies:
+    - "obsidianmd-parser>=0.4.1,<0.5"
