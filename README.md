@@ -44,6 +44,21 @@ Note: you must provide the vault path via `args`. `pass_filenames: false`
 means the hook lints the full vault on any `.md` change. For large vaults,
 consider a dedicated CI job instead.
 
+### After installing the hook: baseline pass
+
+When you first install any pre-commit hook, run it against your whole
+repo and commit the fixes BEFORE normal commits:
+
+```bash
+wikilint path/to/vault        # checks for broken [[wikilinks]] (no auto-fix)
+# → Fix every reported link manually, then:
+git add . && git commit -m "chore: baseline lint pass"
+```
+
+Skipping this step means notes committed before the hook carry invisible
+violations. The first commit touching those old notes is rejected — even
+though it's no dirtier than HEAD.
+
 ## Known upstream quirks handled
 
 obsidian-wikilint wraps [`obsidianmd-parser`](https://codeberg.org/paddyd/obsidianmd-parser)
