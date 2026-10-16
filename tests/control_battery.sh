@@ -1,8 +1,12 @@
 #!/bin/bash
 # Control-vault test battery for obsidian-wikilint. Writes only under /tmp.
 set -u
-PY=/home/sc4n/hermes-agent/venv/bin/python3
-WL=/home/sc4n/hermes-agent/venv/bin/wikilint
+# Resolve the interpreter and the tool RELATIVE TO THIS REPO (decided 2026-09-27), so the battery
+# is portable by construction and not by machine: `tests/../.venv`. The PATH fallback below still
+# covers CI runners and any checkout without a local venv.
+HERE=$(cd "$(dirname "$0")" && pwd)
+PY="$HERE/../.venv/bin/python"
+WL="$HERE/../.venv/bin/wikilint"
 # Portability: this battery runs on this machine AND in GitHub Actions CI.
 # Local venv paths exist here; on a runner they don't — fall back to PATH.
 # Override explicitly (PY=/usr/bin/python3 WL=... bash tests/control_battery.sh)
