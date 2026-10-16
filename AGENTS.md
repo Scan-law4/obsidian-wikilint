@@ -11,6 +11,10 @@ It DOES NOT auto-fix. It only reports.
 4. Use your native file-editing tools to manually fix the exact `line` and `column` reported in the JSON.
 5. Re-run the linter to verify the fix.
 
+Note: if your runner exports `PYTHONPATH` (agent frameworks do), clear it for this tool —
+`env -u PYTHONPATH wikilint /path/to/vault …` — because a stale entry makes the interpreter
+import foreign modules and the linter fails on every run for an unrelated reason.
+
 ## Constraints & Deny Rules
 - NEVER use `sed` or blind regex to replace broken links across the whole vault. Obsidian aliases and block references will be corrupted.
 - NEVER bypass the pre-commit hook with `--no-verify` if this tool fails. Fix the links instead.
