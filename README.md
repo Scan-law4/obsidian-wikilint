@@ -44,6 +44,22 @@ Note: you must provide the vault path via `args`. `pass_filenames: false`
 means the hook lints the full vault on any `.md` change. For large vaults,
 consider a dedicated CI job instead.
 
+### If your runner injects `PYTHONPATH`
+
+Agent frameworks — and some CI images — export `PYTHONPATH` into every child process.
+A stale entry there makes the pinned Python interpreter import a foreign module
+(we hit a foreign `numpy`), and the gate then fails on **every** commit for a reason
+that has nothing to do with your links. Clear it for this tool:
+
+```bash
+env -u PYTHONPATH wikilint path/to/vault
+```
+
+or clear it once at the top of the hook script — `unset PYTHONPATH PYTHONHOME` — which
+covers every Python child that script spawns, not just the one call site. Pre-commit's
+`language: python` hooks run in their own environment; a `repo: local` hook that shells
+out to a system `wikilint` inherits yours.
+
 ### After installing the hook: baseline pass
 
 When you first install any pre-commit hook, run it against your whole
